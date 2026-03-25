@@ -35,7 +35,7 @@ export const audience = [
 ];
 
 export const pricingHighlights = [
-  "Flat $995 per loan",
+  "Flat-fee structure for simpler planning",
   "Clear pricing for lean teams managing growth",
   "Built for lenders who want predictable support costs",
 ];
