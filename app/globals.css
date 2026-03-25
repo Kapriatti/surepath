@@ -442,9 +442,11 @@ img {
 }
 
 .pricing-card {
-  padding: 1.7rem;
+  padding: 2rem;
   border-radius: var(--radius-lg);
-  background: var(--surface-soft);
+  background:
+    radial-gradient(circle at top right, rgba(74, 21, 33, 0.07), transparent 34%),
+    linear-gradient(180deg, rgba(255, 252, 250, 0.98), rgba(246, 239, 236, 0.96));
 }
 
 .pricing-card-top {
@@ -464,18 +466,21 @@ img {
   font-weight: 700;
 }
 
-.pricing-amount-row {
+.pricing-hero {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1.25rem;
-  align-items: end;
-  margin-top: 0.9rem;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1.2rem 1.2rem 1.25rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(221, 214, 210, 0.92);
 }
 
 .pricing-amount {
   display: flex;
   align-items: flex-end;
   gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
 .pricing-amount span {
@@ -492,13 +497,10 @@ img {
 
 .pricing-summary {
   margin: 0;
-  padding: 1rem 1.05rem;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(221, 214, 210, 0.92);
   font-family: Arial, sans-serif;
   color: var(--muted);
   line-height: 1.65;
+  max-width: 30rem;
 }
 
 .pricing-divider {
@@ -511,7 +513,7 @@ img {
 .deliverable-list {
   display: grid;
   gap: 0.95rem;
-  margin-top: 1.3rem;
+  margin-top: 1.45rem;
 }
 
 .pricing-list-item,
@@ -886,10 +888,9 @@ img {
     width: 100%;
   }
 
-  .pricing-card-top,
-  .pricing-amount-row {
-    grid-template-columns: 1fr;
-    align-items: start;
+  .pricing-card-top {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .section-frame {

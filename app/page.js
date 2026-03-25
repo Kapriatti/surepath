@@ -133,23 +133,23 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="pricing-card">
-                <div className="pricing-card-top">
-                  <span className="pricing-label">Sure Path processing fee</span>
-                  <span className="pricing-note">One flat fee</span>
-                </div>
-                <div className="pricing-amount-row">
-                  <div className="pricing-amount">
-                    <strong>$995</strong>
-                    <span>per loan</span>
+                <div className="pricing-card">
+                  <div className="pricing-card-top">
+                    <span className="pricing-label">Sure Path processing fee</span>
+                    <span className="pricing-note">One flat fee</span>
                   </div>
-                  <p className="pricing-summary">
-                    Designed for teams that want predictable support costs and a
-                    cleaner way to plan around production.
-                  </p>
-                </div>
-                <div className="pricing-divider" />
-                <div className="pricing-list">
+                  <div className="pricing-hero">
+                    <div className="pricing-amount">
+                      <strong>$995</strong>
+                      <span>per loan</span>
+                    </div>
+                    <p className="pricing-summary">
+                      Predictable pricing for mortgage teams that want dependable
+                      processing support and a cleaner way to plan around growth.
+                    </p>
+                  </div>
+                  <div className="pricing-divider" />
+                  <div className="pricing-list">
                   {pricingHighlights.map((item) => (
                     <div className="pricing-list-item" key={item}>
                       <span className="pricing-dot" />
