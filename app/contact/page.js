@@ -68,7 +68,7 @@ export default function ContactPage() {
           </div>
         </div>
       </main>
-      <SiteFooter />
+      <SiteFooter hideCta />
     </div>
   );
 }

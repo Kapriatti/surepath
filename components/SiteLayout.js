@@ -26,19 +26,21 @@ export function SiteHeader() {
   );
 }
 
-export function SiteFooter() {
+export function SiteFooter({ hideCta = false }) {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer-cta">
-          <div>
-            <span className="kicker">Ready to talk</span>
-            <h2>Schedule a discovery call and take a closer look at your current loan flow.</h2>
+        {!hideCta ? (
+          <div className="footer-cta">
+            <div>
+              <span className="kicker">Ready to talk</span>
+              <h2>Schedule a discovery call and take a closer look at your current loan flow.</h2>
+            </div>
+            <Link href="/contact" className="button-primary">
+              Book a Discovery Call
+            </Link>
           </div>
-          <Link href="/contact" className="button-primary">
-            Book a Discovery Call
-          </Link>
-        </div>
+        ) : null}
 
         <div className="footer-panel">
           <div className="footer-brand">
