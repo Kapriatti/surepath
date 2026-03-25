@@ -19,16 +19,17 @@ export default function Home() {
             <div className="hero-copy">
               <span className="eyebrow">Outsourced mortgage processing for lending professionals</span>
               <h1>
-                A steadier route
+                A clearer,
                 <br />
-                from application
+                more profitable
                 <br />
-                to close.
+                path to close.
               </h1>
               <p>
                 Sure Path Mortgage Solutions supports brokers, loan officers,
                 branch leaders, and lending teams with structured mortgage
-                processing at a flat $995 per loan.
+                processing designed to improve communication, file movement, and
+                closing readiness.
               </p>
 
               <div className="hero-actions">
@@ -42,16 +43,16 @@ export default function Home() {
 
               <div className="hero-metrics">
                 <div className="metric-card">
-                  <strong>$995</strong>
-                  <span>Flat fee per loan</span>
-                </div>
-                <div className="metric-card">
                   <strong>24-hour</strong>
-                  <span>Initial file review target</span>
+                  <span>Initial review target for newly assigned files</span>
                 </div>
                 <div className="metric-card">
                   <strong>White-label</strong>
-                  <span>Support aligned to your brand</span>
+                  <span>Support aligned to your team and borrower experience</span>
+                </div>
+                <div className="metric-card">
+                  <strong>Close-ready</strong>
+                  <span>Structured follow-up with clearer milestone visibility</span>
                 </div>
               </div>
             </div>
@@ -68,23 +69,32 @@ export default function Home() {
               <div className="panel-list">
                 <div className="panel-list-item">Processing partner, not a lender</div>
                 <div className="panel-list-item">Built for brokers and production teams</div>
-                <div className="panel-list-item">Operational support with flat-fee clarity</div>
+                <div className="panel-list-item">Operational support with consistent communication</div>
               </div>
 
-              <div className="hero-pricing-card">
-                <span className="pricing-label">Fee snapshot</span>
-                <strong>$995</strong>
-                <p>One flat fee per loan, positioned for lean teams that want predictable support costs.</p>
+              <div className="hero-graphic">
+                <div className="hero-graphic-line" />
+                <div className="hero-graphic-grid">
+                  <div className="hero-graphic-card">
+                    <span className="hero-graphic-label">File visibility</span>
+                    <strong>Clear next steps at every stage</strong>
+                  </div>
+                  <div className="hero-graphic-card">
+                    <span className="hero-graphic-label">Team support</span>
+                    <strong>Steadier follow-up without added payroll strain</strong>
+                  </div>
+                </div>
               </div>
             </aside>
           </div>
         </section>
 
-        <section className="section">
-          <div className="container section-frame">
+        <div className="home-band">
+          <section className="section">
+            <div className="container section-frame section-frame-band">
             <div className="section-heading">
-              <span className="kicker">Who It Is For</span>
-              <h2>Built for production teams that need more processing capacity without a heavier payroll model.</h2>
+              <span className="kicker">Who Sure Path Supports</span>
+              <h2>Built for lending professionals who need steadier operational support without disrupting how their team works.</h2>
             </div>
 
             <div className="content-grid">
@@ -95,11 +105,11 @@ export default function Home() {
                 </article>
               ))}
             </div>
-          </div>
-        </section>
+            </div>
+          </section>
 
-        <section className="section">
-          <div className="container section-split">
+          <section className="section">
+            <div className="container section-split section-band-panel">
             <div className="section-heading section-heading-tight">
               <span className="kicker">What We Do</span>
               <h2>Processing support centered on file movement, communication, and closing readiness.</h2>
@@ -118,11 +128,11 @@ export default function Home() {
                 </article>
               ))}
             </div>
-          </div>
-        </section>
+            </div>
+          </section>
 
-        <section className="section">
-          <div className="container pricing-section">
+          <section className="section">
+            <div className="container pricing-section section-band-panel">
             <div className="pricing-copy">
               <span className="kicker">Flat-Fee Pricing</span>
               <h2>Simple pricing that makes it easier to plan around growth.</h2>
@@ -152,8 +162,9 @@ export default function Home() {
                 Book a Discovery Call
               </Link>
             </div>
-          </div>
-        </section>
+            </div>
+          </section>
+        </div>
 
         <section className="section">
           <div className="container section-frame">
