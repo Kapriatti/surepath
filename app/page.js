@@ -134,10 +134,19 @@ export default function Home() {
               </div>
 
               <div className="pricing-card">
-                <span className="pricing-label">Sure Path processing fee</span>
-                <div className="pricing-amount">
-                  <strong>$995</strong>
-                  <span>per loan</span>
+                <div className="pricing-card-top">
+                  <span className="pricing-label">Sure Path processing fee</span>
+                  <span className="pricing-note">One flat fee</span>
+                </div>
+                <div className="pricing-amount-row">
+                  <div className="pricing-amount">
+                    <strong>$995</strong>
+                    <span>per loan</span>
+                  </div>
+                  <p className="pricing-summary">
+                    Designed for teams that want predictable support costs and a
+                    cleaner way to plan around production.
+                  </p>
                 </div>
                 <div className="pricing-divider" />
                 <div className="pricing-list">
