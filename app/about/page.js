@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { SiteFooter, SiteHeader, PageIntro } from "@/components/SiteLayout";
-import { differentiators, testimonials } from "@/content/siteContent";
+import { aboutHighlights, operatingPrinciples } from "@/content/siteContent";
 
 export const metadata = {
   title: "About | Sure Path Mortgage Solutions",
@@ -13,64 +14,53 @@ export default function AboutPage() {
         <div className="container">
           <PageIntro
             kicker="About Sure Path"
-            title="A premium processing partner for mortgage teams that need reliability at scale."
-            description="Until we have the client's full story, this page frames Sure Path around the strengths most credible processing partners emphasize: communication, consistency, compliance awareness, close-ready execution, and simple flat-fee pricing."
+            title="A processing partner built around dependable execution and professional communication."
+            description="Sure Path is positioned for mortgage teams that need structured processing support, clear borrower-aware communication, and a steadier route from file setup to close."
           />
 
           <div className="content-grid">
-            <article className="content-card">
-              <h3>Our Mission</h3>
-              <p>
-                Help mortgage professionals create a smoother, more dependable
-                file journey without adding unnecessary operational strain.
-              </p>
-            </article>
-            <article className="content-card">
-              <h3>Our Approach</h3>
-              <p>
-                Blend responsive human support with repeatable workflow standards
-                so every file gets momentum, visibility, and accountability.
-              </p>
-            </article>
-            <article className="content-card">
-              <h3>Who We Serve</h3>
-              <p>
-                Loan officers, brokers, and lending teams who want stronger
-                throughput, cleaner communication, and more time to focus on
-                production.
-              </p>
-            </article>
+            {aboutHighlights.map((item) => (
+              <article className="content-card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </article>
+            ))}
           </div>
 
           <section className="section">
             <div className="section-heading">
-              <span className="kicker">Why Teams Choose Sure Path</span>
-              <h2>Positioned around practical trust signals, not empty claims.</h2>
+              <span className="kicker">How Sure Path Operates</span>
+              <h2>The relationship is built on consistency, not noise.</h2>
               <p>
-                These differentiators are realistic placeholder assumptions based
-                on common industry expectations for outsourced mortgage
-                processing.
+                When processing support is done well, communication feels steadier,
+                timelines feel clearer, and borrowers experience less friction.
               </p>
             </div>
 
-            <div className="cta-badge-list">
-              {differentiators.map((item) => (
-                <span className="cta-badge" key={item}>
-                  {item}
-                </span>
+            <div className="principles-grid">
+              {operatingPrinciples.map((item) => (
+                <article className="principle-card" key={item.title}>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </article>
               ))}
             </div>
           </section>
 
           <section className="section">
-            <div className="testimonial-grid">
-              {testimonials.map((testimonial) => (
-                <article className="testimonial-card" key={testimonial.source}>
-                  <h3>Client Perspective</h3>
-                  <p className="quote">"{testimonial.quote}"</p>
-                  <p className="quote-source">{testimonial.source}</p>
-                </article>
-              ))}
+            <div className="cta-panel">
+              <div>
+                <span className="kicker">Working Relationship</span>
+                <h2>Sure Path is designed to feel like an operational extension of your team.</h2>
+                <p>
+                  The goal is dependable support, clear communication, and a
+                  process that stays aligned with how your lending team wants to
+                  work.
+                </p>
+              </div>
+              <Link href="/contact" className="button-primary">
+                Book a Discovery Call
+              </Link>
             </div>
           </section>
         </div>

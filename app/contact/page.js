@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import { SiteFooter, SiteHeader, PageIntro } from "@/components/SiteLayout";
 import { resources } from "@/content/siteContent";
 
@@ -12,51 +13,58 @@ export default function ContactPage() {
       <main className="inner-page">
         <div className="container">
           <PageIntro
-            kicker="Contact and Resources"
-            title="Start with a discovery conversation, then shape the right processing support model."
-            description="This page assumes the primary conversion goal is a consultation request, supported by lightweight trust-building resources that can be upgraded later."
+            kicker="Contact"
+            title="Start with a discovery call."
+            description="Share a few details about your team, your current loan flow, and what kind of support you are evaluating. Sure Path typically responds within one business day."
+            compact
           />
 
-          <div className="contact-grid">
-            <article className="contact-card">
-              <span className="kicker">Get In Touch</span>
-              <h3>Talk through your current pipeline, file volume, and bottlenecks.</h3>
-              <p>
-                Placeholder conversion path: a 20-minute discovery call focused on
-                turn times, staffing pressure, borrower communication, and where
-                outsourced processing may create leverage under a flat $995 per
-                loan pricing structure.
-              </p>
-
-              <div className="contact-list">
-                <a href="mailto:hello@surepathmortgagesolutions.com">
-                  hello@surepathmortgagesolutions.com
-                </a>
-                <a href="tel:5550147776">(555) 014-7776</a>
-                <a href="#">Schedule a 20-minute consultation</a>
+          <div className="contact-layout">
+            <section className="form-card">
+              <div className="form-card-header">
+                <span className="kicker">Inquiry Form</span>
+                <h2>Tell us about your team and current volume.</h2>
+                <p>
+                  This form is intended for brokers, loan officers, branch
+                  leaders, and lending teams exploring outsourced processing
+                  support.
+                </p>
               </div>
-            </article>
+              <ContactForm />
+            </section>
 
-            <article className="contact-card">
-              <span className="kicker">Resources</span>
-              <h3>Useful materials for prospective broker and lender partners.</h3>
-              <p>
-                These can stay simple for now or evolve into downloadable lead
-                magnets, onboarding documents, or a client education hub.
-              </p>
+            <aside className="contact-sidebar">
+              <article className="sidebar-card">
+                <span className="kicker">Contact Details</span>
+                <h3>What to expect</h3>
+                <p>
+                  New inquiries are typically reviewed within one business day.
+                  Discovery calls are best used to review file volume, team
+                  structure, and current processing bottlenecks.
+                </p>
+                <div className="contact-list">
+                  <a href="mailto:hello@surepathmortgagesolutions.com">
+                    hello@surepathmortgagesolutions.com
+                  </a>
+                  <a href="tel:5550147776">(555) 014-7776</a>
+                </div>
+              </article>
 
-              <div className="resource-list">
-                {resources.map((resource) => (
-                  <div className="resource-item" key={resource.title}>
-                    <div>
-                      <strong>{resource.title}</strong>
-                      <p>{resource.description}</p>
+              <article className="sidebar-card">
+                <span className="kicker">Resources</span>
+                <h3>Helpful starting points</h3>
+                <div className="resource-list">
+                  {resources.map((resource) => (
+                    <div className="resource-item" key={resource.title}>
+                      <div>
+                        <strong>{resource.title}</strong>
+                        <p>{resource.description}</p>
+                      </div>
                     </div>
-                    <span>View</span>
-                  </div>
-                ))}
-              </div>
-            </article>
+                  ))}
+                </div>
+              </article>
+            </aside>
           </div>
         </div>
       </main>

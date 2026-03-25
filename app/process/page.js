@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { SiteFooter, SiteHeader, PageIntro } from "@/components/SiteLayout";
-import { processSteps } from "@/content/siteContent";
+import { processExpectations, processSteps } from "@/content/siteContent";
 
 export const metadata = {
   title: "Our Process | Sure Path Mortgage Solutions",
@@ -13,38 +14,60 @@ export default function ProcessPage() {
         <div className="container">
           <PageIntro
             kicker="Our Process"
-            title="A structured workflow built to move loans cleanly from intake to close."
-            description="This page uses realistic placeholder sequencing for outsourced mortgage processing, giving us a credible foundation now while staying flexible for later revisions."
+            title="A cleaner process starts with clearer expectations at every stage."
+            description="Sure Path follows a structured file workflow so clients know what is happening, what is still outstanding, and what is required to move the loan forward."
           />
 
-          <div className="process-grid">
+          <div className="process-detail-grid">
             {processSteps.map((step) => (
-              <article className="content-card" key={step.number}>
-                <span className="step-number">{step.number}</span>
-                <h3>{step.title}</h3>
+              <article className="process-detail-card" key={step.number}>
+                <div className="process-detail-header">
+                  <span className="step-number">{step.number}</span>
+                  <h2>{step.title}</h2>
+                </div>
                 <p>{step.description}</p>
+                <div className="deliverable-list">
+                  {step.deliverables.map((item) => (
+                    <div className="deliverable-item" key={item}>
+                      <span className="pricing-dot" />
+                      <p>{item}</p>
+                    </div>
+                  ))}
+                </div>
               </article>
             ))}
           </div>
 
           <section className="section">
+            <div className="section-heading">
+              <span className="kicker">What Clients Can Expect</span>
+              <h2>Operational support that stays visible, responsive, and close-focused.</h2>
+            </div>
+
+            <div className="content-grid">
+              {processExpectations.map((item) => (
+                <article className="content-card" key={item.title}>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section className="section">
             <div className="cta-panel">
               <div>
-                <span className="kicker">How This Helps</span>
-                <h2>Better file visibility means fewer surprises late in the pipeline.</h2>
+                <span className="kicker">Next Step</span>
+                <h2>See whether the process fits your current loan flow.</h2>
                 <p>
-                  The placeholder process is designed around the outcomes mortgage
-                  teams care about most: cleaner submissions, faster follow-up,
-                  stronger borrower communication, and smoother closing readiness.
+                  A discovery call is the best place to review current file volume,
+                  communication pain points, and where processing support can make
+                  the biggest difference.
                 </p>
               </div>
-
-              <div className="cta-badge-list">
-                <span className="cta-badge">Faster file setup</span>
-                <span className="cta-badge">Condition tracking</span>
-                <span className="cta-badge">Borrower follow-up</span>
-                <span className="cta-badge">Clear closing prep</span>
-              </div>
+              <Link href="/contact" className="button-primary">
+                Schedule a Discovery Call
+              </Link>
             </div>
           </section>
         </div>

@@ -1,11 +1,5 @@
 import Link from "next/link";
-
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/process", label: "Process" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-];
+import { footerLinks } from "@/content/siteContent";
 
 export function SiteHeader() {
   return (
@@ -16,8 +10,8 @@ export function SiteHeader() {
           <span className="brand-name">Mortgage Solutions</span>
         </Link>
 
-        <nav className="nav-links">
-          {navItems.map((item) => (
+        <nav className="nav-links" aria-label="Primary">
+          {footerLinks.map((item) => (
             <Link key={item.href} href={item.href}>
               {item.label}
             </Link>
@@ -36,24 +30,44 @@ export function SiteFooter() {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer-panel">
+        <div className="footer-cta">
           <div>
+            <span className="kicker">Ready to talk</span>
+            <h2>Schedule a discovery call and take a closer look at your current loan flow.</h2>
+          </div>
+          <Link href="/contact" className="button-primary">
+            Book a Discovery Call
+          </Link>
+        </div>
+
+        <div className="footer-panel">
+          <div className="footer-brand">
             <div className="brand-lockup">
               <span className="brand-kicker">Sure Path</span>
               <span className="brand-name">Mortgage Solutions</span>
             </div>
             <p>
-              Premium outsourced mortgage processing support for brokers, loan
-              officers, and lenders who need a steadier path to close.
+              Mortgage processing support for brokers, loan officers, branch
+              leaders, and lending teams that need a steadier route to close.
             </p>
           </div>
 
-          <div className="footer-links">
-            {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
-                {item.label}
-              </Link>
-            ))}
+          <div className="footer-nav">
+            <span className="footer-heading">Navigate</span>
+            <div className="footer-links">
+              {footerLinks.map((item) => (
+                <Link key={item.href} href={item.href}>
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="footer-contact">
+            <span className="footer-heading">Contact</span>
+            <a href="mailto:hello@surepathmortgagesolutions.com">hello@surepathmortgagesolutions.com</a>
+            <a href="tel:5550147776">(555) 014-7776</a>
+            <p>Responses are typically sent within one business day.</p>
           </div>
         </div>
       </div>
@@ -61,9 +75,9 @@ export function SiteFooter() {
   );
 }
 
-export function PageIntro({ kicker, title, description }) {
+export function PageIntro({ kicker, title, description, compact = false }) {
   return (
-    <div className="page-intro">
+    <div className={`page-intro${compact ? " page-intro-compact" : ""}`}>
       <span className="kicker">{kicker}</span>
       <h1>{title}</h1>
       <p>{description}</p>

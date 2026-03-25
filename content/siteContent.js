@@ -1,125 +1,195 @@
 export const services = [
   {
-    title: "Contract-to-Close Processing",
+    title: "Contract-to-close processing",
     description:
-      "Full-file support from intake through closing coordination for brokers and independent lenders who want to move faster without expanding internal headcount, offered at a flat $995 per loan.",
+      "File setup, document collection support, milestone follow-up, and closing coordination handled as an extension of your production team.",
   },
   {
-    title: "Compliance-Driven File Review",
+    title: "Compliance-minded file management",
     description:
-      "Documentation checks, condition tracking, disclosure coordination, and communication workflows built around common mortgage processing expectations and audit readiness.",
+      "Documentation is organized with underwriting readiness, condition tracking, and communication discipline built into every stage.",
   },
   {
-    title: "Scalable Team Extension",
+    title: "White-label team support",
     description:
-      "Dedicated processor-style support, white-label communication, and process consistency designed to help growing loan teams absorb volume without losing borrower experience.",
+      "Sure Path can support your borrower and partner experience in a way that stays aligned with your brand, workflow, and client expectations.",
   },
 ];
 
 export const audience = [
-  "Independent mortgage brokers",
-  "Producing loan officers",
-  "Branch leaders and small lending teams",
+  {
+    title: "Mortgage brokers",
+    description:
+      "For broker teams that need stronger processing support without adding another full-time hire.",
+  },
+  {
+    title: "Loan officers",
+    description:
+      "For producers who need cleaner file movement so they can stay focused on relationships and volume.",
+  },
+  {
+    title: "Branch leaders",
+    description:
+      "For lending teams that want more consistency, better visibility, and steadier operational capacity.",
+  },
 ];
 
-export const valuePoints = [
+export const pricingHighlights = [
+  "Flat $995 per loan",
+  "Clear pricing for lean teams managing growth",
+  "Built for lenders who want predictable support costs",
+];
+
+export const homeStandards = [
   {
-    title: "Predictable Economics",
+    title: "Communication standards",
     description:
-      "A flat $995 per loan creates a cleaner pricing conversation than variable staffing costs or unclear per-file support structures.",
+      "Clear updates, responsive follow-up, and aligned borrower communication help keep momentum from slipping late in the file.",
   },
   {
-    title: "More Capacity Without More Payroll",
+    title: "Turnaround discipline",
     description:
-      "Sure Path is positioned as a behind-the-scenes partner that helps teams absorb volume without rushing to hire in-house processing staff.",
+      "Initial reviews, outstanding conditions, and closing readiness are handled with an emphasis on timeliness and accountability.",
   },
   {
-    title: "A Better Borrower Experience",
+    title: "Borrower experience awareness",
     description:
-      "Clear communication, organized documentation, and tighter milestone follow-up reduce the chaos borrowers often feel during a transaction.",
+      "A smoother process is not only operationally stronger, it also protects the client experience your team has worked hard to build.",
   },
 ];
 
 export const processSteps = [
   {
     number: "01",
-    title: "File Intake and Setup",
+    title: "File intake and setup",
     description:
-      "Each file is triaged quickly, contact points are confirmed, and a clean checklist is established so the loan starts with structure instead of confusion.",
+      "Each file begins with a structured review of contacts, milestones, current documentation, and the immediate next actions needed to move it forward.",
+    deliverables: [
+      "File reviewed for completeness",
+      "Contact points confirmed",
+      "Initial checklist established",
+    ],
   },
   {
     number: "02",
-    title: "Document Review and Verifications",
+    title: "Documentation and verification coordination",
     description:
-      "Income, assets, credit, and property-related documentation are organized and reviewed while third-party verifications are ordered on schedule.",
+      "Income, asset, credit, and property documentation are tracked while third-party items are ordered and monitored with closer attention to timing.",
+    deliverables: [
+      "Outstanding documentation identified",
+      "Verifications coordinated",
+      "Condition-sensitive gaps flagged early",
+    ],
   },
   {
     number: "03",
-    title: "Underwriting Coordination",
+    title: "Underwriting support and follow-up",
     description:
-      "Conditions are tracked, documentation gaps are flagged early, and communication stays active between the loan officer, borrower, and underwriting touchpoints.",
+      "As files move deeper into the process, conditions and communications are managed with consistency so borrowers and production teams stay informed.",
+    deliverables: [
+      "Condition list monitored",
+      "Borrower and team follow-up maintained",
+      "Escalations surfaced when needed",
+    ],
   },
   {
     number: "04",
-    title: "Closing Readiness",
+    title: "Closing readiness",
     description:
-      "Sure Path prepares files for a smoother finish with final document follow-up, milestone visibility, and a close-focused handoff process.",
+      "Final document follow-up and milestone visibility are handled with the goal of reducing last-minute surprises and keeping the file close-ready.",
+    deliverables: [
+      "Closing-related items reviewed",
+      "Outstanding tasks tightened",
+      "File handed off with clarity",
+    ],
   },
 ];
 
-export const testimonials = [
+export const processExpectations = [
   {
-    quote:
-      "Sure Path felt like a true extension of our team. Files were cleaner, communication was tighter, and our closings stopped feeling rushed.",
-    source: "Placeholder testimonial, Producing Branch Manager",
+    title: "Visibility at each stage",
+    description:
+      "Clients should know where the file stands, what is still needed, and what the next operational priority is.",
   },
   {
-    quote:
-      "We needed better consistency without hiring another in-house processor. The workflow support gave our loan officers room to focus on production again.",
-    source: "Placeholder testimonial, Independent Mortgage Broker",
+    title: "Clean communication loops",
+    description:
+      "Borrowers, loan officers, and internal stakeholders all benefit when updates are timely and expectations are set clearly.",
   },
   {
-    quote:
-      "The biggest difference was visibility. Everyone knew where the file stood, what was missing, and what had to happen next.",
-    source: "Placeholder testimonial, Small Lending Team Owner",
+    title: "Fewer avoidable bottlenecks",
+    description:
+      "Consistent document tracking and follow-up reduce the small misses that often create larger delays later.",
+  },
+  {
+    title: "A steadier route to close",
+    description:
+      "The goal is cleaner execution and more dependable movement toward closing.",
+  },
+];
+
+export const aboutHighlights = [
+  {
+    title: "Our mission",
+    description:
+      "Support mortgage professionals with disciplined processing that helps files move cleanly and clients stay informed.",
+  },
+  {
+    title: "Our approach",
+    description:
+      "Sure Path is built around responsive communication, structured file management, and dependable execution across the life of the loan.",
+  },
+  {
+    title: "Who we serve",
+    description:
+      "Mortgage brokers, loan officers, branch leaders, and lending teams looking for steadier operational support at a predictable flat fee.",
+  },
+];
+
+export const operatingPrinciples = [
+  {
+    title: "Communication standards",
+    description:
+      "Updates should be timely, professional, and useful. Clients should not need to chase clarity on the status of a file.",
+  },
+  {
+    title: "Compliance-minded support",
+    description:
+      "The work is organized with document readiness and underwriting expectations in mind, not as an afterthought.",
+  },
+  {
+    title: "White-label alignment",
+    description:
+      "Support can stay aligned with the standards, tone, and experience your production team wants borrowers to receive.",
+  },
+  {
+    title: "Consistency at scale",
+    description:
+      "A repeatable process matters most when volume increases. Consistency helps protect turn times, client expectations, and team confidence.",
   },
 ];
 
 export const resources = [
   {
-    title: "Partner Onboarding Checklist",
+    title: "Discovery call",
     description:
-      "Suggested launch checklist for new broker or lender relationships, including contacts, file flow, and communication expectations.",
+      "A short conversation about your current file flow, bottlenecks, and where dedicated processing support could create capacity.",
   },
   {
-    title: "Turn-Time Expectations Guide",
+    title: "Response expectations",
     description:
-      "Sample service-level overview outlining realistic placeholder review windows, milestone follow-up cadence, and escalation standards.",
+      "Sure Path typically responds to new inquiries within one business day and can outline next steps after an initial review.",
   },
   {
-    title: "Loan Pipeline Readiness Call",
+    title: "Best fit",
     description:
-      "A strategy conversation focused on current bottlenecks, file volume, and where outsourced processing can improve speed and consistency.",
+      "The model is especially helpful for brokers, high-producing loan officers, and lean lending teams balancing growth with operational pressure.",
   },
 ];
 
-export const differentiators = [
-  "Flat $995 per loan pricing",
-  "Dedicated processor model",
-  "White-label communication",
-  "Compliance-minded workflow",
-  "Faster operational throughput",
-];
-
-export const pricingHighlights = [
-  "Flat fee structure with no placeholder tier complexity",
-  "Designed for teams who want cost visibility per closed loan",
-  "Ideal for brokers and lenders balancing growth with lean operations",
-];
-
-export const trustStats = [
-  { value: "24-hour", label: "initial review target" },
-  { value: "4-step", label: "processing framework" },
-  { value: "$995", label: "flat fee per loan" },
-  { value: "1 team", label: "aligned around your pipeline" },
+export const footerLinks = [
+  { href: "/", label: "Home" },
+  { href: "/process", label: "Process" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
