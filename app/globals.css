@@ -4,6 +4,9 @@
   --surface-strong: #fffaf8;
   --surface-accent: linear-gradient(180deg, rgba(74, 21, 33, 0.99), rgba(49, 13, 22, 0.98));
   --surface-soft: linear-gradient(180deg, rgba(250, 246, 244, 0.92), rgba(244, 236, 238, 0.96));
+  --surface-card:
+    radial-gradient(circle at top right, rgba(74, 21, 33, 0.07), transparent 34%),
+    linear-gradient(180deg, rgba(255, 252, 250, 0.98), rgba(246, 239, 236, 0.96));
   --text: #1d2230;
   --muted: #667085;
   --brand: #4a1521;
@@ -220,9 +223,20 @@ img {
 .footer-cta,
 .cta-panel {
   border: 1px solid rgba(221, 214, 210, 0.96);
-  background: var(--surface);
   box-shadow: var(--shadow);
   backdrop-filter: blur(18px);
+}
+
+.hero-copy,
+.content-card,
+.process-preview-card,
+.pricing-card,
+.process-detail-card,
+.principle-card,
+.form-card,
+.sidebar-card,
+.footer-panel {
+  background: var(--surface-card);
 }
 
 .hero-copy,
@@ -263,7 +277,8 @@ img {
   padding: 1rem 1rem 1.05rem;
   border: 1px solid rgba(221, 214, 210, 0.92);
   border-radius: var(--radius-sm);
-  background: rgba(255, 250, 248, 0.85);
+  background: var(--surface-card);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.36);
 }
 
 .metric-card strong {
@@ -408,7 +423,9 @@ img {
   padding: 2rem;
   border: 1px solid rgba(221, 214, 210, 0.88);
   border-radius: var(--radius-lg);
-  background: rgba(255, 250, 248, 0.58);
+  background:
+    radial-gradient(circle at top right, rgba(74, 21, 33, 0.05), transparent 38%),
+    linear-gradient(180deg, rgba(255, 252, 250, 0.84), rgba(247, 241, 238, 0.74));
 }
 
 .section-frame-band,
@@ -444,9 +461,7 @@ img {
 .pricing-card {
   padding: 2rem;
   border-radius: var(--radius-lg);
-  background:
-    radial-gradient(circle at top right, rgba(74, 21, 33, 0.07), transparent 34%),
-    linear-gradient(180deg, rgba(255, 252, 250, 0.98), rgba(246, 239, 236, 0.96));
+  background: var(--surface-card);
 }
 
 .pricing-card-top {
@@ -472,7 +487,9 @@ img {
   margin-top: 1rem;
   padding: 1.2rem 1.2rem 1.25rem;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.62);
+  background:
+    radial-gradient(circle at bottom right, rgba(74, 21, 33, 0.05), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(249, 243, 240, 0.94));
   border: 1px solid rgba(221, 214, 210, 0.92);
 }
 
@@ -607,6 +624,13 @@ img {
   padding: 1.8rem;
   border-radius: var(--radius-lg);
   background: var(--surface-soft);
+}
+
+.panel-list-item,
+.hero-pricing-card,
+.pricing-note,
+.step-number {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 .contact-layout {
@@ -868,6 +892,47 @@ img {
     display: none;
   }
 
+  .page-intro,
+  .hero-copy,
+  .hero-panel,
+  .metric-card,
+  .section-heading,
+  .pricing-copy,
+  .pricing-hero,
+  .content-card,
+  .process-preview-card,
+  .process-detail-card,
+  .principle-card,
+  .form-card-header,
+  .sidebar-card,
+  .footer-brand,
+  .footer-nav,
+  .footer-contact,
+  .footer-cta,
+  .cta-panel {
+    text-align: center;
+  }
+
+  .page-intro,
+  .section-heading,
+  .pricing-copy,
+  .form-card-header {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-copy p,
+  .page-intro p,
+  .section-heading p,
+  .pricing-copy p,
+  .panel-copy,
+  .form-card-header p,
+  .footer-panel p,
+  .cta-panel p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .hero-copy,
   .hero-panel,
   .content-card,
@@ -888,9 +953,51 @@ img {
     width: 100%;
   }
 
+  .hero-actions,
+  .section-actions,
+  .form-actions,
+  .contact-list,
+  .footer-links {
+    justify-content: center;
+  }
+
+  .contact-list,
+  .footer-links,
+  .resource-list {
+    justify-items: center;
+  }
+
+  .panel-list {
+    justify-items: stretch;
+  }
+
+  .pricing-amount {
+    justify-content: center;
+  }
+
   .pricing-card-top {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+  }
+
+  .pricing-list-item,
+  .deliverable-item {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .pricing-dot {
+    margin-top: 0;
+  }
+
+  .process-detail-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resource-item {
+    text-align: center;
   }
 
   .section-frame {
