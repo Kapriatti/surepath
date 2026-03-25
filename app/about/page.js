@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { SiteFooter, SiteHeader, PageIntro } from "@/components/SiteLayout";
 import { aboutHighlights, operatingPrinciples } from "@/content/siteContent";
 
@@ -44,23 +43,6 @@ export default function AboutPage() {
                   <p>{item.description}</p>
                 </article>
               ))}
-            </div>
-          </section>
-
-          <section className="section">
-            <div className="cta-panel">
-              <div>
-                <span className="kicker">Working Relationship</span>
-                <h2>Sure Path is designed to feel like an operational extension of your team.</h2>
-                <p>
-                  The goal is dependable support, clear communication, and a
-                  process that stays aligned with how your lending team wants to
-                  work.
-                </p>
-              </div>
-              <Link href="/contact" className="button-primary">
-                Book a Discovery Call
-              </Link>
             </div>
           </section>
         </div>

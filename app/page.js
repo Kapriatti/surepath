@@ -81,7 +81,7 @@ export default function Home() {
         </section>
 
         <section className="section">
-          <div className="container">
+          <div className="container section-frame">
             <div className="section-heading">
               <span className="kicker">Who It Is For</span>
               <h2>Built for production teams that need more processing capacity without a heavier payroll model.</h2>
@@ -156,7 +156,7 @@ export default function Home() {
         </section>
 
         <section className="section">
-          <div className="container">
+          <div className="container section-frame">
             <div className="section-heading">
               <span className="kicker">Process Preview</span>
               <h2>A disciplined workflow from intake through closing readiness.</h2>
@@ -185,7 +185,7 @@ export default function Home() {
         </section>
 
         <section className="section">
-          <div className="container">
+          <div className="container section-frame">
             <div className="section-heading">
               <span className="kicker">Operating Standards</span>
               <h2>The work is built around responsiveness, consistency, and borrower-aware execution.</h2>

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { SiteFooter, SiteHeader, PageIntro } from "@/components/SiteLayout";
 import { processExpectations, processSteps } from "@/content/siteContent";
 
@@ -51,23 +50,6 @@ export default function ProcessPage() {
                   <p>{item.description}</p>
                 </article>
               ))}
-            </div>
-          </section>
-
-          <section className="section">
-            <div className="cta-panel">
-              <div>
-                <span className="kicker">Next Step</span>
-                <h2>See whether the process fits your current loan flow.</h2>
-                <p>
-                  A discovery call is the best place to review current file volume,
-                  communication pain points, and where processing support can make
-                  the biggest difference.
-                </p>
-              </div>
-              <Link href="/contact" className="button-primary">
-                Schedule a Discovery Call
-              </Link>
             </div>
           </section>
         </div>

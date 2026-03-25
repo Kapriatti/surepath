@@ -155,12 +155,12 @@ img {
 
 .hero,
 .inner-page {
-  padding: 4.75rem 0 2rem;
+  padding: 5rem 0 2.2rem;
 }
 
 .page-intro {
   max-width: 46rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .page-intro-compact {
@@ -174,8 +174,8 @@ img {
 .footer-cta h2,
 .cta-panel h2 {
   margin: 0;
-  line-height: 0.96;
-  letter-spacing: -0.05em;
+  line-height: 1.03;
+  letter-spacing: -0.035em;
 }
 
 .page-intro h1 {
@@ -197,7 +197,7 @@ img {
   margin: 0;
   font-family: Arial, sans-serif;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .hero-grid {
@@ -250,7 +250,7 @@ img {
 
 .hero-copy p {
   max-width: 38rem;
-  margin-top: 1.25rem;
+  margin-top: 1.4rem;
   font-size: 1.08rem;
 }
 
@@ -365,13 +365,13 @@ img {
 }
 
 .section {
-  padding: 2.2rem 0;
+  padding: 2.8rem 0;
 }
 
 .section-heading {
   display: grid;
-  gap: 0.65rem;
-  margin-bottom: 1.5rem;
+  gap: 0.8rem;
+  margin-bottom: 1.8rem;
   max-width: 44rem;
 }
 
@@ -391,7 +391,7 @@ img {
 .contact-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  gap: 1.5rem;
+  gap: 1.8rem;
   align-items: start;
 }
 
@@ -400,14 +400,21 @@ img {
 .principles-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.2rem;
+}
+
+.section-frame {
+  padding: 2rem;
+  border: 1px solid rgba(221, 214, 210, 0.88);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 250, 248, 0.58);
 }
 
 .content-card,
 .process-preview-card,
 .principle-card,
 .sidebar-card {
-  padding: 1.6rem;
+  padding: 1.7rem;
   border-radius: var(--radius-md);
 }
 
@@ -418,6 +425,7 @@ img {
 .form-card h2 {
   margin: 0 0 0.75rem;
   font-size: 1.28rem;
+  line-height: 1.2;
 }
 
 .pricing-card {
@@ -501,7 +509,7 @@ img {
 
 .process-detail-grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .process-detail-card {
@@ -518,7 +526,7 @@ img {
 .process-detail-header h2 {
   margin: 0;
   font-size: 1.55rem;
-  line-height: 1.05;
+  line-height: 1.15;
 }
 
 .process-detail-card > p {
@@ -782,12 +790,17 @@ img {
   }
 
   .nav-bar {
+    grid-template-columns: 1fr;
     gap: 0.8rem;
   }
 
   .nav-links {
     flex-wrap: wrap;
     gap: 0.9rem 1rem;
+  }
+
+  .nav-cta {
+    display: none;
   }
 
   .hero-copy,
@@ -806,8 +819,11 @@ img {
   }
 
   .button-primary,
-  .button-secondary,
-  .nav-cta {
+  .button-secondary {
     width: 100%;
+  }
+
+  .section-frame {
+    padding: 1.4rem;
   }
 }
