@@ -89,9 +89,8 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="home-band">
-          <section className="section">
-            <div className="container section-frame section-frame-band">
+        <section className="section">
+          <div className="container section-frame">
             <div className="section-heading">
               <span className="kicker">Who Sure Path Supports</span>
               <h2>Built for lending professionals who need steadier operational support without disrupting how their team works.</h2>
@@ -105,9 +104,10 @@ export default function Home() {
                 </article>
               ))}
             </div>
-            </div>
-          </section>
+          </div>
+        </section>
 
+        <div className="home-band">
           <section className="section">
             <div className="container section-split section-band-panel">
             <div className="section-heading section-heading-tight">
