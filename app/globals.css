@@ -307,6 +307,61 @@ img {
   line-height: 1.65;
 }
 
+.process-page .hero-copy,
+.process-page .hero-panel,
+.process-page .section-heading,
+.process-page .process-detail-card,
+.process-page .content-card,
+.about-page .hero-copy,
+.about-page .hero-panel,
+.about-page .section-heading,
+.about-page .content-card,
+.about-page .principle-card,
+.about-page .sidebar-card {
+  text-align: center;
+}
+
+.process-page .hero-copy p,
+.process-page .section-heading p,
+.process-page .process-detail-card > p,
+.process-page .content-card p,
+.about-page .hero-copy p,
+.about-page .section-heading p,
+.about-page .content-card p,
+.about-page .principle-card p,
+.about-page .sidebar-card p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process-page .hero-actions,
+.about-page .hero-actions,
+.process-page .deliverable-item,
+.about-page .resource-list,
+.about-page .contact-list,
+.about-page .footer-links {
+  justify-content: center;
+}
+
+.process-page .hero-metrics,
+.about-page .hero-metrics,
+.process-page .content-grid,
+.about-page .content-grid,
+.about-page .principles-grid {
+  justify-items: center;
+}
+
+.process-page .deliverable-item,
+.about-page .resource-item {
+  justify-items: center;
+  text-align: center;
+}
+
+.process-page .process-detail-header {
+  flex-direction: column;
+  text-align: center;
+}
+
 .hero-actions,
 .section-actions {
   display: flex;

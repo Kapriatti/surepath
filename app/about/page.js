@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="page-shell">
+    <div className="page-shell about-page">
       <SiteHeader />
       <main className="inner-page">
         <section className="page-hero">

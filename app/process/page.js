@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function ProcessPage() {
   return (
-    <div className="page-shell">
+    <div className="page-shell process-page">
       <SiteHeader />
       <main className="inner-page">
         <section className="page-hero">
