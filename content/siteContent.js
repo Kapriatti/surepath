@@ -130,42 +130,42 @@ export const processExpectations = [
 
 export const aboutHighlights = [
   {
-    title: "Our mission",
+    title: "Texas-based support",
     description:
-      "Support mortgage professionals with disciplined processing that helps files move cleanly and clients stay informed.",
+      "Sure Path Mortgage Solutions is based in [Texas City], Texas and is positioned to support mortgage professionals who want steadier processing coverage. [Confirm city and service footprint.]",
   },
   {
-    title: "Our approach",
+    title: "Founder-led experience",
     description:
-      "Sure Path is built around responsive communication, structured file management, and dependable execution across the life of the loan.",
+      "The company was founded by [Founder Name], a mortgage professional with [X]+ years of experience in mortgage processing and operations. [Replace with approved founder bio.]",
   },
   {
-    title: "Who we serve",
+    title: "Built for production teams",
     description:
-      "Mortgage brokers, loan officers, branch leaders, and lending teams looking for steadier operational support at a predictable flat fee.",
+      "Sure Path was built for brokers, loan officers, branch leaders, and lending teams that need reliable processing support without immediately adding another in-house hire.",
   },
 ];
 
 export const operatingPrinciples = [
   {
-    title: "Communication standards",
+    title: "Transparent communication",
     description:
-      "Updates should be timely, professional, and useful. Clients should not need to chase clarity on the status of a file.",
+      "Clients, borrowers, and referral partners should not have to wonder what is happening with a file. Clear updates and well-set expectations are part of the service.",
   },
   {
-    title: "Compliance-minded support",
+    title: "Detail-first execution",
     description:
-      "The work is organized with document readiness and underwriting expectations in mind, not as an afterthought.",
+      "Every file should be handled with a strong eye for document readiness, milestone follow-up, and the small details that affect closing momentum.",
   },
   {
-    title: "White-label alignment",
+    title: "Professional, borrower-aware support",
     description:
-      "Support can stay aligned with the standards, tone, and experience your production team wants borrowers to receive.",
+      "The process should feel professional, helpful, and aligned with the kind of borrower experience your team wants associated with its brand.",
   },
   {
-    title: "Consistency at scale",
+    title: "Adaptable partnership",
     description:
-      "A repeatable process matters most when volume increases. Consistency helps protect turn times, client expectations, and team confidence.",
+      "As volume changes, the support model should stay flexible enough to meet the moment without creating confusion or operational drag for the team.",
   },
 ];
 

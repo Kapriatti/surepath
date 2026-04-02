@@ -682,6 +682,12 @@ img {
   margin-top: 1rem;
 }
 
+.about-founder-meta {
+  margin: 0.25rem 0 0;
+  font-family: Arial, sans-serif;
+  color: var(--muted);
+}
+
 .resource-item {
   padding-top: 0.95rem;
   border-top: 1px solid rgba(221, 214, 210, 0.92);
