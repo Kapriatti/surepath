@@ -1,4 +1,5 @@
-import { SiteFooter, SiteHeader, PageIntro } from "@/components/SiteLayout";
+import Link from "next/link";
+import { SiteFooter, SiteHeader } from "@/components/SiteLayout";
 import {
   aboutHighlights,
   audience,
@@ -14,13 +15,77 @@ export default function AboutPage() {
     <div className="page-shell">
       <SiteHeader />
       <main className="inner-page">
-        <div className="container">
-          <PageIntro
-            kicker="About Sure Path"
-            title="A Texas-based processing partner built to bring steadier support to mortgage teams."
-            description="Sure Path Mortgage Solutions was created to support brokers, loan officers, branch leaders, and lending teams that want a more dependable processing partner behind the scenes. Company-specific history, founder details, and exact milestones can be finalized after client review."
-          />
+        <section className="page-hero">
+          <div className="container hero-grid page-hero-grid">
+            <div className="hero-copy page-hero-copy">
+              <span className="kicker">About Sure Path</span>
+              <h1>
+                A Texas-based processing partner built to bring steadier support
+                to mortgage teams.
+              </h1>
+              <p>
+                Sure Path Mortgage Solutions was created to support brokers,
+                loan officers, branch leaders, and lending teams that want a
+                more dependable processing partner behind the scenes.
+                Company-specific history, founder details, and exact milestones
+                can be finalized after client review.
+              </p>
 
+              <div className="hero-actions">
+                <Link href="/contact" className="button-primary">
+                  Book a Discovery Call
+                </Link>
+                <Link href="/process" className="button-secondary">
+                  See the Process
+                </Link>
+              </div>
+
+              <div className="hero-metrics page-hero-metrics">
+                <div className="metric-card">
+                  <strong>Texas-based</strong>
+                  <span>Placeholder location details can be refined with the client</span>
+                </div>
+                <div className="metric-card">
+                  <strong>Founder-led</strong>
+                  <span>Founder story and background can be finalized after review</span>
+                </div>
+                <div className="metric-card">
+                  <strong>Production-focused</strong>
+                  <span>Built for mortgage teams that need steadier operational support</span>
+                </div>
+              </div>
+            </div>
+
+            <aside className="hero-panel page-hero-panel">
+              <span className="panel-label">Who Sure Path is</span>
+              <h2 className="panel-title">
+                The goal is to feel like a dependable extension of the
+                production team, not a disconnected outside vendor.
+              </h2>
+              <p className="panel-copy">
+                Sure Path is positioned around professional communication,
+                visible execution, and support that helps clients protect their
+                borrower experience as volume grows.
+              </p>
+
+              <div className="panel-list">
+                <div className="panel-list-item">Texas-based operational support</div>
+                <div className="panel-list-item">Built for brokers, loan officers, and branch leaders</div>
+              </div>
+
+              <div className="page-hero-note-card">
+                <span className="pricing-label">Founder placeholder</span>
+                <p>
+                  [Founder Name], [Title Placeholder], with [X]+ years in
+                  mortgage operations. Final bio can be updated after client
+                  approval.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <div className="container">
           <div className="content-grid">
             {aboutHighlights.map((item) => (
               <article className="content-card" key={item.title}>
