@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { SiteFooter, SiteHeader } from "@/components/SiteLayout";
 import {
-  audience,
-  homeStandards,
   pricingHighlights,
   processSteps,
   services,
@@ -80,24 +78,6 @@ export default function Home() {
         </section>
 
         <div className="home-band">
-          <section className="section">
-            <div className="container section-frame section-frame-band">
-              <div className="section-heading">
-                <span className="kicker">Who Sure Path Supports</span>
-                <h2>Built for lending professionals who need steadier operational support without disrupting how their team works.</h2>
-              </div>
-
-              <div className="content-grid">
-                {audience.map((item) => (
-                  <article className="content-card" key={item.title}>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </section>
-
           <section className="section">
             <div className="container section-split section-band-panel">
               <div className="section-heading section-heading-tight">
@@ -190,24 +170,6 @@ export default function Home() {
               <Link href="/process" className="button-secondary">
                 See the Process
               </Link>
-            </div>
-          </div>
-        </section>
-
-        <section className="section">
-          <div className="container section-frame">
-            <div className="section-heading">
-              <span className="kicker">Operating Standards</span>
-              <h2>The work is built around responsiveness, consistency, and borrower-aware execution.</h2>
-            </div>
-
-            <div className="content-grid">
-              {homeStandards.map((item) => (
-                <article className="content-card" key={item.title}>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </article>
-              ))}
             </div>
           </div>
         </section>

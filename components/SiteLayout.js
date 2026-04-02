@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { footerLinks } from "@/content/siteContent";
 
 export function SiteHeader() {
+  const pathname = usePathname();
+
   return (
     <header className="site-header">
       <div className="container nav-bar">
@@ -12,7 +17,12 @@ export function SiteHeader() {
 
         <nav className="nav-links" aria-label="Primary">
           {footerLinks.map((item) => (
-            <Link key={item.href} href={item.href}>
+            <Link
+              key={item.href}
+              href={item.href}
+              className={pathname === item.href ? "nav-link-active" : ""}
+              aria-current={pathname === item.href ? "page" : undefined}
+            >
               {item.label}
             </Link>
           ))}

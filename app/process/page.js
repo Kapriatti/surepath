@@ -1,5 +1,9 @@
 import { SiteFooter, SiteHeader, PageIntro } from "@/components/SiteLayout";
-import { processExpectations, processSteps } from "@/content/siteContent";
+import {
+  homeStandards,
+  processExpectations,
+  processSteps,
+} from "@/content/siteContent";
 
 export const metadata = {
   title: "Our Process | Sure Path Mortgage Solutions",
@@ -45,6 +49,26 @@ export default function ProcessPage() {
 
             <div className="content-grid">
               {processExpectations.map((item) => (
+                <article className="content-card" key={item.title}>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section className="section">
+            <div className="section-heading">
+              <span className="kicker">Execution Standards</span>
+              <h2>The process works best when communication, timing, and follow-up stay disciplined.</h2>
+              <p>
+                Sure Path is structured to help teams maintain momentum without
+                creating more noise around the file.
+              </p>
+            </div>
+
+            <div className="content-grid">
+              {homeStandards.map((item) => (
                 <article className="content-card" key={item.title}>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>

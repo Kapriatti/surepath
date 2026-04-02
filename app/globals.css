@@ -112,6 +112,27 @@ img {
   font-size: 0.95rem;
 }
 
+.nav-links a {
+  position: relative;
+  padding: 0.35rem 0;
+  transition: color 160ms ease;
+}
+
+.nav-link-active {
+  color: var(--brand);
+}
+
+.nav-link-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.3rem;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--brand), rgba(74, 21, 33, 0.45));
+}
+
 .nav-links a:hover,
 .footer-links a:hover,
 .contact-list a:hover {

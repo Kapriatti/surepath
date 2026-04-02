@@ -1,5 +1,9 @@
 import { SiteFooter, SiteHeader, PageIntro } from "@/components/SiteLayout";
-import { aboutHighlights, operatingPrinciples } from "@/content/siteContent";
+import {
+  aboutHighlights,
+  audience,
+  operatingPrinciples,
+} from "@/content/siteContent";
 
 export const metadata = {
   title: "About | Sure Path Mortgage Solutions",
@@ -25,6 +29,27 @@ export default function AboutPage() {
               </article>
             ))}
           </div>
+
+          <section className="section">
+            <div className="section-heading">
+              <span className="kicker">Who Sure Path Supports</span>
+              <h2>Designed for teams that need steadier execution without adding unnecessary complexity.</h2>
+              <p>
+                The model is best suited to lenders and producers who want
+                stronger processing support while keeping their borrower
+                experience and internal workflow intact.
+              </p>
+            </div>
+
+            <div className="content-grid">
+              {audience.map((item) => (
+                <article className="content-card" key={item.title}>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </article>
+              ))}
+            </div>
+          </section>
 
           <section className="section">
             <div className="section-heading">
