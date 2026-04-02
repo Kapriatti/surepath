@@ -79,150 +79,135 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section home-overview-section">
-          <div className="container home-overview-grid">
-            <div className="section-frame overview-copy-card">
-              <div className="section-heading section-heading-tight">
-                <span className="kicker">Operational Overview</span>
-                <h2>Support for mortgage teams that want cleaner throughput without a heavier internal workload.</h2>
-                <p>
-                  Sure Path is structured to help files move more clearly from
-                  intake to closing readiness while keeping communication and
-                  borrower experience aligned with your team.
-                </p>
+        <section className="section home-ribbon-section">
+          <div className="container">
+            <div className="home-ribbon">
+              <div className="home-ribbon-item">
+                <span className="kicker">Who It&apos;s For</span>
+                <p>Brokers, loan officers, branch leaders, and lending teams.</p>
               </div>
-
-              <div className="overview-points">
-                <div className="overview-point">
-                  <strong>For brokers, loan officers, and branch leaders</strong>
-                  <p>Support designed for active production teams, not borrower-facing lending.</p>
-                </div>
-                <div className="overview-point">
-                  <strong>Operational help without another full-time hire</strong>
-                  <p>Built for teams balancing growth, file volume, and day-to-day execution pressure.</p>
-                </div>
+              <div className="home-ribbon-item">
+                <span className="kicker">Support Style</span>
+                <p>White-label processing support that stays aligned to your workflow.</p>
               </div>
-            </div>
-
-            <div className="overview-aside">
-              <article className="overview-glance-card">
-                <span className="kicker">At a Glance</span>
-                <div className="overview-glance-list">
-                  <div>
-                    <strong>24-hour review target</strong>
-                    <p>Early visibility on what a file needs next.</p>
-                  </div>
-                  <div>
-                    <strong>White-label support</strong>
-                    <p>Communication can stay aligned to your borrower experience.</p>
-                  </div>
-                  <div>
-                    <strong>Close-ready focus</strong>
-                    <p>Structured follow-up that reduces last-minute surprises.</p>
-                  </div>
-                </div>
-              </article>
-
-              <article className="overview-quote-card">
-                <p>
-                  Clean execution matters most when file volume starts testing
-                  the capacity of the team behind it.
-                </p>
-              </article>
+              <div className="home-ribbon-item">
+                <span className="kicker">Fee Structure</span>
+                <p>One flat fee per loan for more predictable planning.</p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="section home-mosaic-section">
-          <div className="container home-mosaic-grid">
-            <div className="section-heading home-mosaic-heading">
-              <span className="kicker">What We Do</span>
-              <h2>Structured processing support that feels more intentional and easier to manage.</h2>
-              <p>
-                The model is built around cleaner file movement, steadier
-                follow-up, and predictable operational coverage for growing
-                lending teams.
-              </p>
-            </div>
-
-            <article className="content-card service-feature-card">
-              <span className="kicker">Support Model</span>
-              <h3>Processing partner, not a lender.</h3>
-              <p>
-                Sure Path works behind the scenes as an extension of the
-                production team, helping protect momentum without taking the
-                relationship away from your brand.
-              </p>
-            </article>
-
-            {services.map((service) => (
-              <article className="content-card service-mosaic-card" key={service.title}>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-              </article>
-            ))}
-
-            <div className="pricing-card pricing-mosaic-card">
-              <div className="pricing-card-top">
-                <span className="pricing-label">Flat-Fee Pricing</span>
-                <span className="pricing-note">Predictable model</span>
-              </div>
-              <div className="pricing-hero">
-                <div className="pricing-amount">
-                  <strong>$995</strong>
-                  <span>per loan</span>
-                </div>
-                <p className="pricing-summary">
-                  Straightforward pricing for teams that want dependable support
-                  costs and a cleaner way to plan around production volume.
+        <section className="section home-services-section">
+          <div className="container home-services-layout">
+            <div className="section-frame home-story-card">
+              <div className="section-heading section-heading-tight">
+                <span className="kicker">Why Teams Use Sure Path</span>
+                <h2>Operational support that creates clarity without creating more noise.</h2>
+                <p>
+                  Sure Path is built for production teams that want cleaner file
+                  movement, steadier follow-up, and better visibility without
+                  overcomplicating how the team already works.
                 </p>
               </div>
-              <div className="pricing-divider" />
-              <div className="pricing-list">
-                {pricingHighlights.map((item) => (
-                  <div className="pricing-list-item" key={item}>
-                    <span className="pricing-dot" />
-                    <p>{item}</p>
+
+              <div className="home-story-points">
+                <div className="home-story-point">
+                  <strong>Built for active production teams</strong>
+                  <p>Support designed for the people managing volume, relationships, and closing pace every day.</p>
+                </div>
+                <div className="home-story-point">
+                  <strong>Structured to reduce bottlenecks</strong>
+                  <p>Clearer movement from intake through readiness helps protect momentum when file pressure rises.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="home-services-stack">
+              {services.map((service) => (
+                <article className="content-card home-service-card" key={service.title}>
+                  <h3>{service.title}</h3>
+                  <p>{service.description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section home-pricing-section">
+          <div className="container">
+            <div className="section-frame home-pricing-frame">
+              <div className="pricing-copy home-pricing-copy">
+                <span className="kicker">Flat-Fee Pricing</span>
+                <h2>Simple pricing placed in one clear, easy-to-scan section.</h2>
+                <p>
+                  The model is straightforward: one flat fee per loan for teams
+                  that want dependable processing support without a more
+                  complicated staffing structure.
+                </p>
+              </div>
+
+              <div className="pricing-card home-pricing-card">
+                <div className="pricing-card-top">
+                  <span className="pricing-label">Sure Path processing fee</span>
+                  <span className="pricing-note">One flat fee</span>
+                </div>
+                <div className="pricing-hero">
+                  <div className="pricing-amount">
+                    <strong>$995</strong>
+                    <span>per loan</span>
                   </div>
-                ))}
+                  <p className="pricing-summary">
+                    Predictable support costs for teams that want steadier file
+                    movement and a cleaner path around growth.
+                  </p>
+                </div>
+                <div className="pricing-divider" />
+                <div className="pricing-list">
+                  {pricingHighlights.map((item) => (
+                    <div className="pricing-list-item" key={item}>
+                      <span className="pricing-dot" />
+                      <p>{item}</p>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/contact" className="button-primary pricing-button">
+                  Book a Discovery Call
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
         <section className="section home-process-section">
-          <div className="container home-process-grid">
-            <div className="section-frame home-process-copy">
-              <div className="section-heading section-heading-tight">
-                <span className="kicker">Process Preview</span>
-                <h2>A more visible workflow from intake through closing readiness.</h2>
-                <p>
-                  The process is structured to keep priorities visible, reduce
-                  bottlenecks, and help teams know what needs attention next.
-                </p>
-              </div>
-
-              <div className="home-process-actions">
-                <Link href="/process" className="button-secondary">
-                  See the Process
-                </Link>
-                <Link href="/contact" className="button-primary">
-                  Book a Discovery Call
-                </Link>
-              </div>
+          <div className="container home-process-layout">
+            <div className="section-heading home-process-heading">
+              <span className="kicker">Process Preview</span>
+              <h2>A disciplined workflow that stays visible from intake through closing readiness.</h2>
+              <p>
+                The process is structured so loan teams can see what is
+                happening, what is still outstanding, and what needs attention
+                next.
+              </p>
             </div>
 
-            <div className="process-preview-stack">
+            <div className="home-process-grid-v2">
               {previewSteps.map((step) => (
-                <article className="process-preview-card process-preview-offset" key={step.number}>
-                  <div className="process-preview-topline">
-                    <span className="step-number">{step.number}</span>
-                    <span className="process-preview-line" />
-                  </div>
+                <article className="process-preview-card home-process-card" key={step.number}>
+                  <span className="step-number">{step.number}</span>
                   <h3>{step.title}</h3>
                   <p>{step.description}</p>
                 </article>
               ))}
+            </div>
+
+            <div className="home-process-footer">
+              <Link href="/process" className="button-secondary">
+                See the Process
+              </Link>
+              <Link href="/contact" className="button-primary">
+                Book a Discovery Call
+              </Link>
             </div>
           </div>
         </section>
