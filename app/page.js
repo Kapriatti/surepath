@@ -15,12 +15,10 @@ export default function Home() {
         <section className="hero">
           <div className="container hero-grid">
             <div className="hero-copy">
-              <h1>
-                A clearer,
-                <br />
-                more profitable
-                <br />
-                path to close.
+              <h1 className="hero-title">
+                <span className="hero-line">A clearer,</span>
+                <span className="hero-line">more profitable</span>
+                <span className="hero-line">path to close.</span>
               </h1>
               <p>
                 Sure Path Mortgage Solutions supports brokers, loan officers,
