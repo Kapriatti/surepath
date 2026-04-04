@@ -456,6 +456,16 @@ img {
   font-size: clamp(2rem, 3.3vw, 3.2rem);
 }
 
+.pricing-copy {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.pricing-copy p {
+  max-width: 34rem;
+}
+
 .section-split,
 .pricing-section,
 .contact-layout {
@@ -617,6 +627,10 @@ img {
 
 .process-preview-card {
   min-height: 100%;
+}
+
+.section-actions {
+  margin-top: 1.8rem;
 }
 
 .step-number {

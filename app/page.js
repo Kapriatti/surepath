@@ -105,9 +105,9 @@ export default function Home() {
                 <span className="kicker">Flat-Fee Pricing</span>
                 <h2>Simple pricing that makes it easier to plan around growth.</h2>
                 <p>
-                  The pricing model is straightforward: one flat fee per loan for
-                  teams that want dependable processing support without a more
-                  complicated staffing structure.
+                  Clear, predictable pricing makes it easier for growing teams
+                  to plan for processing support without adding unnecessary
+                  operational complexity.
                 </p>
               </div>
 
