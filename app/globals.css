@@ -1083,7 +1083,11 @@ img {
 
   .deliverable-item {
     grid-template-columns: auto 1fr;
-    justify-items: start;
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
   }
 
