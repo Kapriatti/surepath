@@ -267,7 +267,7 @@ img {
 
 .hero-copy h1 {
   font-size: clamp(2.85rem, 5.1vw, 4.75rem);
-  max-width: 12ch;
+  max-width: 14ch;
 }
 
 .hero-line {
