@@ -1081,13 +1081,19 @@ img {
     text-align: center;
   }
 
-  .deliverable-item {
-    grid-template-columns: auto 1fr;
-    justify-content: center;
+  .deliverable-list {
+    justify-items: center;
     width: fit-content;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .deliverable-item {
+    grid-template-columns: auto 1fr;
+    justify-content: start;
+    width: 100%;
+    max-width: 100%;
     text-align: left;
   }
 
