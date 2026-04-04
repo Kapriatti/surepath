@@ -14,7 +14,8 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="container hero-grid">
-            <div className="hero-copy">
+            <div className="hero-copy home-hero-copy">
+              <span className="kicker">Sure Path Mortgage Solutions</span>
               <h1 className="hero-title">
                 <span className="hero-line">Texas-based</span>
                 <span className="hero-line">loan support</span>

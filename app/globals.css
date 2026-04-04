@@ -270,6 +270,18 @@ img {
   max-width: 14ch;
 }
 
+.home-hero-copy {
+  display: grid;
+  align-content: start;
+  gap: 1.35rem;
+}
+
+.home-hero-copy p,
+.home-hero-copy .hero-actions,
+.home-hero-copy .hero-metrics {
+  margin-top: 0;
+}
+
 .hero-line {
   display: block;
   white-space: nowrap;
