@@ -1081,8 +1081,18 @@ img {
     text-align: center;
   }
 
+  .deliverable-item {
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    text-align: left;
+  }
+
   .pricing-dot {
     margin-top: 0;
+  }
+
+  .deliverable-item .pricing-dot {
+    margin-top: 0.43rem;
   }
 
   .process-detail-header {
